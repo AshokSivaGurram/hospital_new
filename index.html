@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hospital Management</title>
+</head>
+<body>
+    <div id="main-form">
+        <h1>Lakshmi Narasiah Hospital</h1>
+        <div id="New-patient-form">
+            <h2>Add New Patient</h2>
+            <div class="form-contents">
+                <h3>Name of Patient</h3> &emsp;
+                <input type="text" id="new-patient-name">
+            </div>
+            <div class="form-contents">
+                <h3>Consultation Fee</h3> &emsp;
+                <input type="number" id="consultation-fee">
+            </div>
+            <div class="form-contents" id="adding-medicines-form">
+                <h3 id="new-patient-add-medicine">Medicines</h3>
+                <div class="form-contents" id="new-medicines-adder">  
+                    No Medicines Added.
+                </div>
+                <div id="new-medicine-form"></div>
+                <button id="add-new-medicine">Add Medicine</button>
+            </div>
+            <div class="form-contents">
+                <h2>Total Price</h2>
+                <input type="number" id="total-price"> &emsp;
+                <button id="calculate-total">Calculate Total</button>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <div id="gotodatediv">
+        <label for="gotodate" id="helptextforgoto">Select a date to get patients records in that date : </label>
+        <input type="date" id="gotodate" name="gotodate" class="date-input"> &emsp;
+        <button type="submit" id="gotodatesubmit">Submit</button>
+    </div>
+    <div id="today-total">
+        <h2>Total : ₹ <span id="today-total-amount">0</span></h2>
+    </div>
+    <div id = "previous-patients-list">
+    </div>
+</body>
+<script src="index.js" type="module"></script>
+</html>
